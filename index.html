@@ -1,0 +1,168 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Citizen Hex Inc.">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>2100</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: ghostwhite;
+        }
+
+        h1{
+            font-size: 4rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h2{
+            margin-top: 3.5rem;
+            margin-bottom: 1.25rem;
+        }
+        h3{
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+        h4{
+            margin-top: 2.75rem;
+            margin-bottom: 0.75rem;
+        }
+        p,a {
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            font-weight: 300;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 ">
+      <div class="col-md-8 p-lg-5 mx-auto my-5 ">
+        <h1>2100</h1>
+        <h2>Introduction</h2>
+        <p>In 2100, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
+        <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
+        <p>The owner of a username on Twitter is entitled to 10% of their token's supply (210 tokens). A public marketplace of 'minters' compete to mint and own the remaining 1890 tokens.</p>
+        <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
+        <h3>Motivation</h3>
+        <p>We speculate that 2100 tokens have multiple use-cases and create natural incentives for account owners to create utility for their token.</p>
+        <h3>Prior Art</h3>
+        <p>In a May 2019 interview with @joerogan, @jack recounted that Twitter was not invented but ‘discovered’.  With this statement, he was referring to the post-internet inevitability of a Twitter-like protocol.</p>
+        <p>We theorize that socially-linked commodities are a natural outcome of the democratization of financial engineering, and that 2100 or a similar protocol is also awaiting 'discovery'.</p>
+        <p>As evidence of this, we cite three previous (though incomplete) implementations of this idea:</p>
+        <h4>The Hollywood Stock Exchange (HSX)</h4>
+        <p>Created in 1999 by @maxkeiser and Michael R. Burns, the Hollywood Stock Exchange, or HSX, is a web-based, multiplayer game in which players use simulated money to buy and sell simulated shares of actors, directors, upcoming films, and film-related options.</p>
+        <a href="">https://en.wikipedia.org/wiki/Hollywood_Stock_Exchange</a>
+        <h4>Stolen!</h4>
+        <p>Created in November 2015 by @blader, Stolen! was a fast paced mobile game that quickly gained popularity. The goal of the game was to steal Twitter accounts from other users using in-game currency S-bucks which was earned by holding popular accounts.</p>
+        <a href="">https://en.wikipedia.org/wiki/Stolen!</a>
+        <h4>Augur Twitter Markets</h4>
+        <p>Augur is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities become popular trading venues.</p>
+        <a href="">https://en.wikipedia.org/wiki/Augur_(software)</a>
+        <h3>Towards long-lived, platform independent social commodities</h3>
+        <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no value outside of a single app. They both had hardened game mechanics that could not transcend their niche gaming use cases. Stolen also suffered from censorship when Twitter withdrew API access.</p>
+        <p>Augur Twitter markets have given us the closest approximation of a censorship resistant, platform-independent commodity, however Augur markets predicting Twitter followers exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be sybil-attacked and is not always correlated with an increase in popularity or utility.</p>
+        <p>2100 proposes a mechanism to create long-lived, censorship resistant, and platform independent, identity-linked commodities. If the architecture of the protocol is correct, we hope that it will inspire people to build applications like HSX and Stolen on 'Layer 2' of the protocol.</p>
+     <!--    <h3>Examples of 2100 utility</h3>
+        <p>2100 commodities exist on the Ethereum blockchain and are interoperable with other dapps that immediately enhance their utility.  Here are a few examples of how they can be used:</p>
+        <h4>Sybil-resistant popularity:</h4>
+        <p>When there’s no cost associated with subscribing to a feed on public networks like Twitter, users can subscribe to an arbitrarily large number of accounts.  This creates a problem for influencers and popular accounts because they can’t prioritize or distinguish die-hard fans from casual fans or bots.</p>
+        <p>2100 tokens can facilitate a weighted (and sybil resistant) subscription model.  With sybil resistant subscriptions, influencers can do a lot more for their fans:</p>
+        <ul>
+          <li>‘Hodl at least 1 $dollarshaveclub and get a free razor every month!’</li>
+          <li>‘All $marvel holders get advanced access to Black Panther 2’</li>
+          <li>‘Collect 100 $katyperry for an evening with Katy Perry’</li>
+      </ul>
+      <h4>Asset-backed collectables:</h4>
+      <p>One problem with digital collectables is that they’re scarce individually, but not scarce collectively.  During the baseball-card bubble of the1990s, there were multiple brands that produced cards for a given player: ‘Donruss’, ‘Upper Deck’, etc., but total volume was constrained by the cost of production and distribution.  If we replayed this era with a near-zero marginal cost of production and distribution (both enabled by Ethereum) there would be hundreds or thousands of cards per player. 2100 creates the possibility of commodity-backed collectables:</p>
+      <ul>
+          <li>‘Burn 1 $kdtrey5 to mint a Kevin Durant NFT’</li>
+      </ul>
+      <h4>Broad-exposure sets:</h4>
+      <p>Use Set Protocol (or another protocol) to create sets of 2100 tokens.  These act like ETFs to create diversified exposure to a theme.</p>
+      <p>Toronto Raptors rebalancing set:</p>
+      <ul>
+          <li>$raptors</li>
+          <li>$fredvanvleet</li>
+          <li>$pskills43</li>
+          <li>$drake</li>
+          <li>$jlin7</li>
+      </ul>
+      <p>The co-existence of brands and individuals on Twitter allows for both kinds of identities to be included in a set.</p> -->
+      <h3>Schelling point</h3>
+      <p>A casual criticism of Bitcoin is that it ‘isn’t backed by anything’. Those who have studied it more thoroughly understand that Bitcoin is backed by social consensus, and that it is the current ‘Schelling point’ for digital scarcity.</p>
+      <p>Similarly, there is no intrinsic relationship between 2100 tokens and Twitter accounts.  It is a relationship that emerges with the correct functioning of the 2100 protocol and the emergence of token utility that are built on the protocol.</p>
+      <h2>Protocol</h2>
+      <h3>On Centralization</h3>   
+      <p>While our long term goal is to completely decentralize the 2100 protocol, the costs of fully decentralized staking on the ‘long tail’ of 10,000 Twitter account names are currently too prohibitive.  For 2100 to succeed, a stakers ‘cost of production’ for each token must be very low.</p>
+      <p>For this reason, 2100 will start out with a centralized staking platform that keeps track of user balances and generates tokens “off-chain”. Users can at any time redeem tokens on-chain using a message signed by Citizen Hex’s private keys.</p>
+      <h3>Creating a Token Contract</h3>
+      <p>2100 token contracts are created when Citizen Hex approves that a string of lowercase characters is an existing Twitter username.</p>
+      <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
+      <p>"Add @SnoopDogg to #2100</p>
+      <p>Citizen Hex will verify that “snoopdogg” is an existing Twitter username, that a token with the name “snoopdogg” has not yet been created, and that “snoopdogg” isn’t on the username blacklist (See “Owner Opt-Out and Blacklist”). Citizen Hex will use its private keys to sign an authorization message.</p>
+      <p>Anyone can then broadcast this authorization message to the Ethereum blockchain to create the account token contract.</p>
+      <p>When the token contract is created, 0.0021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
+      <h3>Generating Tokens off-chain</h3>
+      <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by Citizen Hex. This generation of tokens takes place in a database owned by Citizen Hex and tokens are not minted on-chain until a user requests settlement. Every block will generate 0.00021 username tokens until the maximum supply of 2,100 is reached.</p>
+      <p>Users deposit DAI (a token pegged in value to the US Dollar) into a non-custodial Ethereum contract. Citizen Hex never has possession of these funds and users can deposit or withdraw DAI at any time.</p>
+      <p>When a user deposits DAI, Citizen Hex detects this amount and credits the user with the equivalent staking allocation in a database owned by Citizen Hex. When a user withdraws DAI, Citizen Hex removes the staking allocation in its database.</p>
+      <p>Users can log on to the 2100 app to see their staking allocation. They then choose how much of their allocation they want to stake on particular user name accounts.</p>
+      <p>For every Ethereum block detected by Citizen Hex, 0.00021 tokens are generated in a Citizen Hex database for each username account. 90% of these tokens are divided pro-rata to users who have staked on these accounts. 10% of these tokens are reserved for the Twitter account owner as an ‘owners reward’ ((see “Owners Reward”).</p>
+      <p>For example, Alice has chosen to stake 1 DAI on $SnoopDogg and Bob has staked 2 DAI. For each block, Alice will be credited (1/3*0.00021*90%) 0.000063 $SnoopDogg, Bob will be credited (2/3*0.00021*90%) 0.000126 $SnoopDogg, and @SnoopDogg will be credited (0.00021*10%) 0.000021 $SnoopDogg.</p>
+      <h3>Minting Tokens on-chain</h3>
+      <p>At any time a user can choose to take their off-chain tokens and mint them on-chain. Once on-chain these assets are fully interoperable with other tokens on the Ethereum network.</p>
+      <p>A user clicks a button in the 2100 app and the app signs an authorization message for the 2100 smart contract to mint the tokens they are owed. When the user broadcasts this authorization message on-chain, the 2100 smart contract mints the tokens.</p>
+      <p>Following the example above, Alice wants to redeem 0.000063 $SnoopDogg from the centralized app and put it on the decentralized Ethereum blockchain. She clicks “Redeem” in the app and she receives an authorization message. She broadcasts this message to the Ethereum network, sending it to the 2100 smart contract, which instructs the “snoopdogg” token contract to credit her balance with 0.000063.</p>
+      <p>The 2100 smart contract enforces that the authorization message cannot be used more than once and that the message is signed by Citizen Hex. When a token is minted on-chain it is now fully in possession of the user and can be used however she wants.</p>
+      <h3>Owners Reward</h3>
+      <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
+      <p>Owners of a username on the Twitter platform can change the issuance address and claim any existing tokens to their own Ethereum address by tweeting out a message specifying their Ethereum address.</p>
+      <p>Citizen Hex will monitor Twitter for this tweet and sign an authorization message that claims any current and ongoing owner’s reward tokens to a specific address. This tweet mechanism that only the owner of a Twitter account can claim their owner’s rewards.</p>
+      <p>When this message is broadcast on-chain, the 2100 smart contract will verify its authenticity and store the owner’s address. The 2100 centralized app will detect this change and credit the owner’s Ethereum address with any outstanding tokens, and will issue new tokens to this address.</p>
+      <p>An owner can then mint their tokens on-chain like any other user of the application.</p>
+      <h3>Username changes</h3>
+      <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in tweets, but keeps all other existing data such as followers, likes, etc.</p>
+      <p>In order to keep the social consensus that 2100 tokens use Twitter usernames as reference, a 2100 username token must also be able to alter its symbol to match a Twitter username change.</p>
+      <p>When a Twitter account is renamed, anyone in the world can send a tweet specifying which username changed:</p>
+      <p>Citizen Hex will verify that this happened and sign a message authorizing a name change on the $andrewyangvfa token contract.</p>
+      <p>Anyone can broadcast this message on-chain to change the token’s name and symbol. If an existing 2100 token contract exists with the new symbol (andrewyang), it will be changed to the old symbol (andrewyangvfa).</p>
+      <p>The address of the 2100 token contract does not change at the end of this process and thereby closely mirrors the Twitter platforms username change feature.</p>
+      <p>This mechanism deters stakers from moving funds out of the old username token contract and into the new username token contract at the moment the Twitter account changes its username.</p>
+      <p>The intent of the move is to be the first stakers in a smaller pool on the official username contract and to devalue holders of the old username contract token. However, after a user or Citizen Hex detects the change, this discrepancy will be fixed and these opportunistic stakers will instead be mining unofficial and thus devalued tokens. </p>
+      <h3>Owner Opt-Out and Blacklist</h3>
+      <p>Should the owner of a Twitter username not want their username to be used in the 2100 app they can tweet a message:</p>
+      <p>Citizen Hex will verify that this tweet was sent by the account that wants to opt-out.</p>
+      <p>If there is no account token with that username, Citizen Hex will broadcast a message on-chain that will add this username to a blacklist. The token contract for this name will never be able to be created once a name is on the blacklist.</p>
+      <p>If there is a token contract that has its symbol set to the same string as the user’s account, Citizen Hex will broadcast a message that both adds the name to the blacklist and also scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to “6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782”</p>
+      <p>The 2100 centralized app will detect this change and immediately halt staking on this account. Users who have generated tokens on this account can still mint them on-chain, but no further tokens will be generated off-chain or minted.</p>
+  </div>
+  <div class="product-device box-shadow d-none d-md-block"></div>
+  <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+</div>
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-md-3">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+      <small class="d-block mb-3 text-muted">© 2019 Citizen Hex </small>
+  </div>
+  <div class="col-md-6">
+      <h5>2100</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://github.com/2100hq">Github</a></li>
+        <li><a class="text-muted" href="https://twitter.com/2100hq">Twitter</a></li>
+        <li><a class="text-muted" href="https://twitter.com/2100hq">Discord</a></li>
+        <li><a class="text-muted" href="mailto:hi@2100.co">Contact</a></li>
+    </ul>
+</div>
+</div>
+</footer>
+
+</body></html>

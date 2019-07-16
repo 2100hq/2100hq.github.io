@@ -74,9 +74,9 @@
         <h4>Augur Twitter Markets</h4>
         <p><a href="https://twitter.com/AugurProject">@AugurProject</a> is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities become popular trading venues.</p>
         <a href="">https://en.wikipedia.org/wiki/Augur_(software)</a>
-        <h3>Towards long-lived, platform independent, social commodities</h3>
-        <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no value outside of a single app. They both had hardened game mechanics that could not transcend their niche gaming use cases.</p>
-        <p><a href="https://twitter.com/AugurProject">@AugurProject</a> Twitter markets have given us the closest approximation of a censorship resistant, platform-independent commodity, but these markets predicting Twitter followers exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be sybil-attacked and is not always correlated with an increase in popularity or utility.</p>
+        <h3>Towards long-lived, platform independent commodities</h3>
+        <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no utility outside of a single app.</p>
+        <p><a href="https://twitter.com/AugurProject">@AugurProject</a> Twitter markets have given us the closest approximation of a censorship resistant, platform-independent commodity, but these markets exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be Sybil attacked and is not always correlated with an increase in popularity or utility.</p>
         <figure class="figure">
           <img src="img/figure3.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">A <a class="small" href="https://twitter.com/veil">@veil</a> market attempting to tokenize the popularity of @andrewyang</figcaption>
@@ -115,10 +115,10 @@
       <h3>On Centralization</h3>
       <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
 
-      <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain by Citizen Hex Inc. (the company behind 2100), with plans to move to an Ethereum Plasma Chain after we demonstrate a clear use-case for 2100.</p>
+      <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain by Citizen Hex Inc. (the company behind 2100), with plans to move 'on-chain' after we demonstrate a clear use-case for 2100.</p>
 
       <h3>Creating a Token Contract</h3>
-      <p>2100 token contracts are created when Citizen Hex approves that a string of lowercase characters is an existing Twitter username.</p>
+      <p>2100 token contracts are created when Citizen Hex Inc. approves that a string of lowercase characters is an existing Twitter username.</p>
       <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
       <p>"Add @SnoopDogg to #2100</p>
       <p>Citizen Hex will verify that “snoopdogg” is an existing Twitter username, that a token with the name “snoopdogg” has not yet been created, and that “snoopdogg” isn’t on the username blacklist (See “Owner Opt-Out and Blacklist”). Citizen Hex will use its private keys to sign an authorization message.</p>

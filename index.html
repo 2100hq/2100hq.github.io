@@ -81,7 +81,7 @@
           <img src="img/figure3.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">A <a class="small" href="https://twitter.com/veil">@veil</a> market attempting to tokenize the popularity of @andrewyang</figcaption>
         </figure>
-        <p>2100 proposes a mechanism to create long-lived, censorship resistant, and platform independent, identity-linked commodities. If the architecture of the protocol is correct, we hope that it will inspire people to build applications like HSX and Stolen on 'Layer 2' of the protocol.</p>
+        <p>2100 proposes a mechanism to create long-lived, censorship resistant, platform independent, identity-linked commodities. If implemented correctly, we hope that it will inspire a 'Layer 2' of utility.</p>
      <!--    <h3>Examples of 2100 utility</h3>
         <p>2100 commodities exist on the Ethereum blockchain and are interoperable with other dapps that immediately enhance their utility.  Here are a few examples of how they can be used:</p>
         <h4>Sybil-resistant popularity:</h4>
@@ -108,13 +108,15 @@
           <li>$jlin7</li>
       </ul>
       <p>The co-existence of brands and individuals on Twitter allows for both kinds of identities to be included in a set.</p> -->
-      <h3>Schelling point</h3>
+<!--       <h3>Schelling point</h3>
       <p>A casual criticism of Bitcoin is that it ‘isn’t backed by anything’. Those who have studied it more thoroughly understand that Bitcoin is backed by social consensus, and that it is the current ‘Schelling point’ for digital scarcity.</p>
-      <p>Similarly, there is no intrinsic relationship between 2100 tokens and Twitter accounts.  It is a relationship that emerges with the correct functioning of the 2100 protocol and the emergence of token utility that are built on the protocol.</p>
+      <p>Similarly, there is no intrinsic relationship between 2100 tokens and Twitter accounts.  It is a relationship that emerges with the correct functioning of the 2100 protocol and the emergence of token utility that are built on the protocol.</p> -->
       <h2>Protocol</h2>
-      <h3>On Centralization</h3>   
-      <p>While our long term goal is to completely decentralize the 2100 protocol, the costs of fully decentralized staking on the ‘long tail’ of 10,000 Twitter account names are currently too prohibitive.  For 2100 to succeed, a stakers ‘cost of production’ for each token must be very low.</p>
-      <p>For this reason, 2100 will start out with a centralized staking platform that keeps track of user balances and generates tokens “off-chain”. Users can at any time redeem tokens on-chain using a message signed by Citizen Hex’s private keys.</p>
+      <h3>On Centralization</h3>
+      <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
+
+      <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain by Citizen Hex Inc. (the company behind 2100), with plans to move to an Ethereum Plasma Chain after we demonstrate a clear use-case for 2100.</p>
+
       <h3>Creating a Token Contract</h3>
       <p>2100 token contracts are created when Citizen Hex approves that a string of lowercase characters is an existing Twitter username.</p>
       <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>

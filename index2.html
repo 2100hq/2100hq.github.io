@@ -72,7 +72,7 @@
 
   h1{
     font-size: 8rem;
-    font-weight: 400;
+    font-weight: 600;
 
   }
 
@@ -114,12 +114,12 @@
 
   <!-- SECTION 1 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex overflow-hidden align-items-center justify-content-center">
-      <h1 class="display-5 position-fixed">21OO</h1>
+    <div class="col-md-5 d-flex overflow-hidden align-items-center justify-content-center">
+      <h1 class="display-5 position-fixed" style="z-index: 999; font-style: italic">21OO</h1>
     </div>
-    <div class="overflow-hidden">
-      <div class="p-5 bg-light">
-        <p class="big">In 21OO, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
+    <div class="col-md-7 overflow-hidden">
+      <div class="p-5">
+        <p class="big">In <em>21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
       </div>
     </div>
   </div>
@@ -127,9 +127,9 @@
 
   <!-- SECTION 2 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center">
+    <div class="col-md-5 d-flex align-items-center justify-content-center">
     </div>
-    <div class="overflow-hidden">
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Mechanics</h3>
         <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
@@ -145,8 +145,8 @@
 
   <!-- SECTION 3 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5 ">
         <h3>Motivation</h3>
         <p>We speculate that 2100 tokens have multiple use-cases and create natural incentives for account owners to create utility for their token.</p>
@@ -156,8 +156,8 @@
 
   <!-- SECTION 4 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Prior Art</h3>
         <p>In a <a href="https://youtu.be/_mP9OmOFxc4">May 2019 interview</a> with <a href="https://twitter.com/joerogan">@joerogan</a>, <a href="https://twitter.com/jack">@jack</a> recounted that Twitter was not invented but ‘discovered’.  With this statement, he was referring to the post-internet inevitability of a Twitter-like protocol.</p>
@@ -182,8 +182,8 @@
 
   <!-- SECTION 5  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h2>Protocol</h2>
         <h3>On Centralization</h3>
@@ -196,8 +196,8 @@
 
   <!-- SECTION 6  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Creating a Token Contract</h3>
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
@@ -213,8 +213,8 @@
 
   <!-- SECTION 7  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Generating Tokens off-chain</h3>
         <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a> and tokens are not minted on-chain until a user requests settlement. Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.</p>
@@ -230,8 +230,8 @@
 
   <!-- SECTION 8  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Minting Tokens on-chain</h3>
         <p>At any time a user can choose to take their off-chain tokens and mint them on-chain as ERC-20 tokens. Once on-chain these assets are fully interoperable with the Ethereum network.</p>
@@ -244,8 +244,8 @@
 
   <!-- SECTION 9  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex bg-light align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Owners Reward</h3>
         <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username to a maximum of 100 tokens. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
@@ -261,8 +261,8 @@
 
   <!-- SECTION 10  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Username changes</h3>
         <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in Tweets, but does not change other data such as followers, likes, etc.</p>
@@ -279,8 +279,8 @@
 
   <!-- SECTION 11  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
-    <div class="overflow-hidden">
+    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
       <div class="p-5">
         <h3>Owner Opt-Out and Blacklist</h3>
         <p>Should the owner of a Twitter username not want their username to be used in the 2100 app they can tweet a message:</p>

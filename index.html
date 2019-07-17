@@ -66,27 +66,23 @@
   }
 
   p,a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
   }
 
   h1{
-    font-size: 8rem;
+    font-size: 6rem;
     font-weight: 600;
 
   }
 
-  h2{
-    font-size: 4rem;
-    margin-bottom: 1.25rem;
-  }
   h3{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
   }
   h4{
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     margin-top: 2.75rem;
     margin-bottom: 0.75rem;
   }
@@ -110,16 +106,17 @@
   }
 </style>
 </head>
-<body class="">
+<body class="p-5">
 
   <!-- SECTION 1 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex overflow-hidden align-items-center justify-content-center">
+    <div class="col-md-4 d-flex overflow-hidden align-items-center justify-content-center">
       <h1 class="display-5 position-fixed" style="z-index: 999; font-style: italic">21OO</h1>
     </div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <p class="big">In <em>21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
+        <hr/>
       </div>
     </div>
   </div>
@@ -127,10 +124,10 @@
 
   <!-- SECTION 2 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center">
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
     </div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Mechanics</h3>
         <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
         <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
@@ -145,9 +142,9 @@
 
   <!-- SECTION 3 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5 ">
+      <div class=" ">
         <h3>Motivation</h3>
         <p>We speculate that 2100 tokens have multiple use-cases and create natural incentives for account owners to create utility for their token.</p>
       </div>
@@ -156,9 +153,9 @@
 
   <!-- SECTION 4 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Prior Art</h3>
         <p>In a <a href="https://youtu.be/_mP9OmOFxc4">May 2019 interview</a> with <a href="https://twitter.com/joerogan">@joerogan</a>, <a href="https://twitter.com/jack">@jack</a> recounted that Twitter was not invented but ‘discovered’.  With this statement, he was referring to the post-internet inevitability of a Twitter-like protocol.</p>
         <p>We theorize that socially-linked commodities are (yet another) natural outcome of the democratization of financial engineering, and that 2100 or a similar protocol is also awaiting 'discovery'.</p>
@@ -182,10 +179,9 @@
 
   <!-- SECTION 5  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
-        <h2>Protocol</h2>
+      <div class="">
         <h3>On Centralization</h3>
         <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
 
@@ -196,9 +192,9 @@
 
   <!-- SECTION 6  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Creating a Token Contract</h3>
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
         <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
@@ -213,9 +209,9 @@
 
   <!-- SECTION 7  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Generating Tokens off-chain</h3>
         <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a> and tokens are not minted on-chain until a user requests settlement. Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.</p>
         <p>Users deposit DAI (a token pegged in value to the US Dollar) into a non-custodial Ethereum contract. <a href="https://twitter.com/2100hq">@2100hq</a> never has possession of these funds and users can deposit or withdraw DAI at any time.</p>
@@ -230,9 +226,9 @@
 
   <!-- SECTION 8  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Minting Tokens on-chain</h3>
         <p>At any time a user can choose to take their off-chain tokens and mint them on-chain as ERC-20 tokens. Once on-chain these assets are fully interoperable with the Ethereum network.</p>
         <p>A user clicks a button in the 2100 app and the app signs an authorization message for the 2100 smart contract to mint the tokens they are owed. When the user broadcasts this authorization message on-chain, the 2100 smart contract mints the tokens.</p>
@@ -244,9 +240,9 @@
 
   <!-- SECTION 9  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Owners Reward</h3>
         <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username to a maximum of 100 tokens. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
         <p>Owners of a username on the Twitter platform can change the issuance address and claim any existing tokens to their own Ethereum address by tweeting out a message specifying their Ethereum address.</p>
@@ -261,9 +257,9 @@
 
   <!-- SECTION 10  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Username changes</h3>
         <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in Tweets, but does not change other data such as followers, likes, etc.</p>
         <p>To reinforce the social consensus that 2100 tokens represent Twitter usernames, a 2100 username token must also be able to alter its symbol to match a Twitter username change.</p>
@@ -279,9 +275,9 @@
 
   <!-- SECTION 11  -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-5 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
-      <div class="p-5">
+      <div class="">
         <h3>Owner Opt-Out and Blacklist</h3>
         <p>Should the owner of a Twitter username not want their username to be used in the 2100 app they can tweet a message:</p>
         <quote>Remove my username from @2100hq</quote>

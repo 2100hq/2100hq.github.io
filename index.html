@@ -122,7 +122,7 @@
     }
 
     h1{
-      font-size: 6rem;
+      font-size: 5.5rem;
       font-weight: 600;
 
     }
@@ -174,7 +174,7 @@
           href="#overview"
           class="navlink eg1"
           data-aos="fade-in"
-          data-aos-offset="120"
+          data-aos-offset="125"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-anchor-placement="top-center"
@@ -289,13 +289,13 @@
     <div class="col-md-7 overflow-hidden">
       <div class="">
         <h3 id="overview">Overview</h3>
-        <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
+        <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts would create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
         <figure class="figure">
           <img src="img/figure1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">@andrewyang + DAI lockdrop = $andrewyang</figcaption>
         </figure>
-        <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
-        <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
+        <p>The owner of a username on Twitter is entitled to 100 of their own tokens. A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
+        <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice. Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
         <p>Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.  Assuming continuous staking and 15s Ethereum blocks, 2100 tokens will be emitted in approximately 4.75 years.</p>
       </div>
     </div>
@@ -371,9 +371,9 @@
       <div class="">
         <h3>Creating Tokens</h3>
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
-        <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
-        <blockquote>"Add @SnoopDogg to #2100</blockquote>
-        <p><a href="https://twitter.com/2100hq">@2100hq</a> will verify that “snoopdogg” is an existing Twitter username, that a token with the name “snoopdogg” has not yet been created, and that “snoopdogg” isn’t on the opt-out list (See “Owner Opt-Out”). <a href="https://twitter.com/2100hq">@2100hq</a> will use its private keys to sign an authorization message.</p>
+        <p>To be added to 2100, an account owner must publish a Tweet specifying that their username should be added:</p>
+        <blockquote>"@Snoopdog: Creating $snoopdog by adding @SnoopDogg to #2100</blockquote>
+        <p><a href="https://twitter.com/2100hq">@2100hq</a> will verify that “snoopdogg” is an existing Twitter username and use its private keys to sign an authorization message.</p>
         <p>Anyone can then broadcast this authorization message to the Ethereum blockchain to create the account token contract.</p>
         <p>When the token contract is created, 0.021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
       </div>
@@ -453,11 +453,10 @@
     <div class="col-md-7 overflow-hidden">
       <div class="">
         <h3>Owner Opt-Out</h3>
-        <p>Should the owner of a Twitter username not want their username to be used in the 2100 app they can tweet a message:</p>
+        <p>Should the owner of a Twitter username no longer want their username to be used in the 2100 app they can tweet a message:</p>
         <blockquote>"Remove my username from @2100hq"</blockquote>
         <p>@2100hq will verify that this tweet was sent by the account that wants to opt-out.</p>
-        <p>If there is no account token with that username, @2100hq will broadcast a message on-chain that will add this username to an opt-out list. The token contract for this name will never be able to be created once a name is on the opt-out list.</p>
-        <p>If there is a token contract that has its symbol set to the same string as the user’s account, Citizen Hex will broadcast a message that both adds the name to the opt-out list and also scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to “6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782”</p>
+        <p>@2100hq will broadcast a message that scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to “6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782”</p>
         <p>The 2100 centralized app will detect this change and immediately halt staking on this account. Users who have generated tokens on this account can still mint them on-chain, but no further tokens will be generated off-chain or minted.</p>
       </div>
     </div>
@@ -470,7 +469,7 @@
     <div class="col-md-7 overflow-hidden">
       <div class="">
         <h3>Next Steps</h3>
-        <p>At @2100hq, we're currently prototyping 2100 with plans for a private testnet in August 2019 and a public testnet coinciding with @EFDevcon.  If you'd like to get involved, you can follow @2100hq or say 'hi' on Discord.  Thanks for reading!</p>
+        <p>@2100hq is currently prototyping 2100 with plans for a private testnet in August 2019 and a public testnet coinciding with @EFDevcon.  If you'd like to get involved, you can follow @2100hq or say 'hi' on Discord.  Thanks for reading!</p>
       </div>
     </div>
   </div>

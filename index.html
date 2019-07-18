@@ -55,6 +55,47 @@
 
 
 <style>
+
+  /*
+
+    eg1: #4aa6a7;
+    eg2: #5173ac;
+    eg3: #8151a9;
+
+    eg4: #b75378;
+    eg5: #ed6558;
+    eg6: #ed6558;
+
+    eg7: #bb8450
+    eg8: #9ab153;
+    eg9: #68b07c;
+
+  */
+
+  a.eg1,a:hover.eg1,a:visited.eg1{
+    color: #4aa6a7;
+  }
+
+  a.eg2,a:hover.eg2,a:visited.eg2{
+    color: #5173ac;
+  }
+
+  a.eg3,a:hover.eg3,a:visited.eg3{
+    color: #8151a9;
+  }
+
+  a.eg4,a:hover.eg4,a:visited.eg4{
+    color: #b75378;
+  }
+
+  a.eg5,a:hover.eg5,a:visited.eg5{
+    color: #ed6558;
+  }
+
+  a.eg6,a:hover.eg6,a:visited.eg6{
+    color: #ed6558;
+  }
+
   body{
     font-family: 'IBM Plex Mono', monospace;
   }
@@ -92,15 +133,12 @@
     font-weight: 500;
   }
 
-  a.red,a:visited{
-  }
-
-  a:hover{
-    text-decoration: none;
+  figure{
+    margin-bottom: 3rem;
   }
 
   .figure-caption{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 </style>
 </head>
@@ -113,23 +151,18 @@
         <h1 class="display-5" style="font-style: italic">21OO</h1>
         <div style="text-align: right;"
         >
-        <h5
-        data-aos="fade-in"
-        data-aos-offset="100"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-        data-aos-anchor-placement="top-center"
-        >a primer:</h5>
         <a 
-        href="#mechanics"
+        href="#overview"
+        class="eg1"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Mechanics</a><br/>
+        >Overview</a><br/>
         <a 
         href=""
+        class="eg2"
         data-aos="fade-in"
         data-aos-delay="75"
         data-aos-offset="100"
@@ -139,28 +172,31 @@
         >Motivation</a><br/>
         <a 
         href=""
+        class="eg3"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Prior art</a><br/>
+        >Context</a><br/>
         <a 
         href=""
+        class="eg4"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Centralization</a><br/>
+        >Philosophy</a><br/>
         <a 
         href=""
+        class="eg5"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Creating</a>
+        >Creating Tokens</a>
       </div>
 
     </div>
@@ -182,11 +218,11 @@
   </div>
   <div class="col-md-7 overflow-hidden">
     <div class="">
-      <h3 id="mechanics">Mechanics</h3>
+      <h3 id="overview">Overview</h3>
       <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
         <figure class="figure">
           <img src="img/figure1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
-          <figcaption class="figure-caption">@andrewyang is automatically entitled to 100 $andrewyang, this is known as an 'owners reward'</figcaption>
+          <figcaption class="figure-caption">@andrewyang + DAI lockdrop = $andrewyang</figcaption>
         </figure>
       <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
       <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
@@ -201,7 +237,15 @@
     <div class="col-md-7 overflow-hidden">
       <div class=" ">
         <h3>Motivation</h3>
-        <p>We speculate that 2100 tokens have multiple use-cases and create natural incentives for account owners to create utility for their token.</p>
+        <p>We believe that 2100 tokens have multiple forms of utility and create natural incentives for both minters and account owners.  For example, 2100 tokens can facilitate a weighted (and sybil resistant) social graph.</p>
+
+        <p>When there is no cost associated with subscribing to a feed on public networks like Twitter, users can subscribe to an arbitrarily large number of accounts.  This creates a problem for influencers and popular accounts because they can’t prioritize or distinguish die-hard fans from casual fans or bots.</p>
+
+        <p>With sybil resistant subscriptions, influencers can do a lot more for their followers:</p>
+
+        <blockquote>‘Hodl at least 1 $dollarshaveclub and get a free razor every month!’</blockquote>
+        <blockquote>'Get a backstage pass with 10 $snoopdog'</blockquote>
+        <blockquote>‘Burn 1 $kdtrey5 to mint a Kevin Durant NFT’</blockquote>
       </div>
     </div>
   </div>
@@ -211,7 +255,7 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>Prior Art</h3>
+        <h3>Context</h3>
         <p>In a <a href="https://youtu.be/_mP9OmOFxc4">May 2019 interview</a> with <a href="https://twitter.com/joerogan">@joerogan</a>, <a href="https://twitter.com/jack">@jack</a> recounted that Twitter was not invented but ‘discovered’.  With this statement, he was referring to the post-internet inevitability of a Twitter-like protocol.</p>
         <p>We theorize that socially-linked commodities are (yet another) natural outcome of the democratization of financial engineering, and that 2100 or a similar protocol is also awaiting 'discovery'.</p>
         <p>As evidence of this, we cite three previous (though incomplete) implementations of this idea:</p>
@@ -219,15 +263,19 @@
         <p>Created in 1999 by <a href="https://twitter.com/maxkeiser">@maxkeiser</a> and Michael R. Burns, the Hollywood Stock Exchange, or HSX, is a web-based, multiplayer game in which players use simulated money to buy and sell simulated shares of actors, directors, upcoming films, and film-related options.</p>
         <a href="">https://en.wikipedia.org/wiki/Hollywood_Stock_Exchange</a>
         <h4>Stolen!</h4>
-        <p>Created in November 2015 by @blader, Stolen! was a fast paced mobile game that quickly gained popularity. The goal of the game was to steal Twitter accounts from other users using in-game currency S-bucks which was earned by holding popular accounts.</p>
+        <p>Created in November 2015 by @blader, Stolen! was a fast paced mobile game that quickly gained popularity. The goal of the game was to steal Twitter accounts from other users using in-game currency S-bucks which were earned by holding popular accounts.</p>
         <a href="">https://en.wikipedia.org/wiki/Stolen!</a>
         <h4>Augur Twitter Markets</h4>
         <p><a href="https://twitter.com/AugurProject">@AugurProject</a> is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities become popular trading venues.</p>
+        <figure class="figure">
+          <img src="img/figure3.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+          <figcaption class="figure-caption">A @veil market for betting on Andrew Yang's Twitter followers</figcaption>
+        </figure>
         <a href="">https://en.wikipedia.org/wiki/Augur_(software)</a>
-        <h3>Towards long-lived, platform independent commodities</h3>
+        <h3>Platform independence</h3>
         <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no utility outside of a single app.</p>
         <p><a href="https://twitter.com/AugurProject">@AugurProject</a> Twitter markets have given us the closest approximation of a censorship resistant, platform-independent commodity, but these markets exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be Sybil attacked and is not always correlated with an increase in popularity or utility.</p>
-        <p>2100 proposes a mechanism to create long-lived, censorship resistant, platform independent, identity-linked commodities. If implemented correctly, we hope that it will inspire a 'Layer 2' of utility.</p>
+        <p>2100 proposes a mechanism to create long-lived, censorship resistant, platform independent, identity-linked commodities. With the right implementation, we hope that 2100 will inspire a 'Layer 2' of utility.</p>
       </div>
     </div>
   </div>
@@ -237,10 +285,10 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>On Centralization</h3>
+        <h3>Philosophy</h3>
         <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
 
-        <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain by Citizen Hex Inc. (the company behind 2100, hereby referred to as <a href="https://twitter.com/2100hq">@2100hq</a>), with plans to move 'on-chain' after we demonstrate a clear use-case for 2100.</p>
+        <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain by Citizen Hex Inc. (the company behind 2100, hereby referred to as <a href="https://twitter.com/2100hq">@2100hq</a>), with plans to move 'on-chain' (Ethereum Plasma etc.) if our 'MVP' is a success.</p>
       </div>
     </div>
   </div>
@@ -250,7 +298,7 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>Creating a Token Contract</h3>
+        <h3>Creating Tokens</h3>
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
         <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
         <quote>"Add @SnoopDogg to #2100</quote>
@@ -394,11 +442,7 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-
-
-});  </script>
+    AOS.init();  </script>
 
     <!-- Bootstrap core JavaScript
       ================================================== -->

@@ -66,7 +66,7 @@
     eg5: #ed6558;
     eg6: #ed6558;
 
-    eg7: #bb8450
+    eg7: #bb8450;
     eg8: #9ab153;
     eg9: #68b07c;
 
@@ -94,6 +94,18 @@
 
   a.eg6,a:hover.eg6,a:visited.eg6{
     color: #ed6558;
+  }
+
+  a.eg7,a:hover.eg7,a:visited.eg6{
+    color: #bb8450;
+  }
+
+  a.eg8,a:hover.eg8,a:visited.eg6{
+    color: #9ab153;
+  }
+
+  a.eg9,a:hover.eg9,a:visited.eg6{
+    color: #68b07c;
   }
 
   body{
@@ -140,6 +152,10 @@
   .figure-caption{
     font-size: 1.2rem;
   }
+
+  .navlink{
+    display: block;
+  }
 </style>
 </head>
 <body class="p-5">
@@ -149,54 +165,106 @@
     <div class="col-md-4 d-flex overflow-hidden align-items-center justify-content-center">
       <div class="position-fixed" style="z-index: 999;">
         <h1 class="display-5" style="font-style: italic">21OO</h1>
-        <div style="text-align: right;"
-        >
-        <a 
-        href="#overview"
-        class="eg1"
+        <div style="text-align: right;">
+        <h4
+        class=""
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Overview</a><br/>
+        >a primer:</h4>
+        <a 
+        href="#overview"
+        class="navlink eg1"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Overview</a>
         <a 
         href=""
-        class="eg2"
+        class="navlink eg2"
         data-aos="fade-in"
         data-aos-delay="75"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Motivation</a><br/>
+        >Motivation</a>
         <a 
         href=""
-        class="eg3"
+        class="navlink eg3"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Context</a><br/>
+        >Context</a>
         <a 
         href=""
-        class="eg4"
+        class="navlink eg4"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
-        >Philosophy</a><br/>
+        >Philosophy</a>
         <a 
         href=""
-        class="eg5"
+        class="navlink eg5"
         data-aos="fade-in"
         data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-anchor-placement="top-center"
         >Creating Tokens</a>
+        <a 
+        href=""
+        class="navlink eg6"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Minting off-chain</a>
+        <a 
+        href=""
+        class="navlink eg7"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Settling on-chain</a>
+        <a 
+        href=""
+        class="navlink eg8"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Name Changes</a>
+        <a 
+        href=""
+        class="navlink eg9"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Owners Reward</a>
+        <a 
+        href=""
+        class="navlink eg1"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Opting Out</a>
       </div>
 
     </div>
@@ -315,7 +383,7 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>Generating Tokens off-chain</h3>
+        <h3>Minting off-chain</h3>
         <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a> and tokens are not minted on-chain until a user requests settlement. Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.</p>
         <p>Users deposit DAI (a token pegged in value to the US Dollar) into a non-custodial Ethereum contract. <a href="https://twitter.com/2100hq">@2100hq</a> never has possession of these funds and users can deposit or withdraw DAI at any time.</p>
         <p>When a user deposits DAI, <a href="https://twitter.com/2100hq">@2100hq</a> detects this amount and credits the user with the equivalent staking allocation in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a>. When a user withdraws DAI, <a href="https://twitter.com/2100hq">@2100hq</a> removes the staking allocation in its database.</p>
@@ -332,7 +400,7 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>Minting Tokens on-chain</h3>
+        <h3>Settling on-chain</h3>
         <p>At any time a user can choose to take their off-chain tokens and mint them on-chain as ERC-20 tokens. Once on-chain these assets are fully interoperable with the Ethereum network.</p>
         <p>A user clicks a button in the 2100 app and the app signs an authorization message for the 2100 smart contract to mint the tokens they are owed. When the user broadcasts this authorization message on-chain, the 2100 smart contract mints the tokens.</p>
         <p>Following the example above, Alice wants to redeem 0.000063 $SnoopDogg from the centralized app to the Ethereum blockchain. She clicks “Redeem” in the app and she receives an authorization message. She broadcasts this message to the Ethereum network, sending it to the 2100 smart contract, which instructs the “snoopdogg” token contract to credit her balance with 0.000063.</p>

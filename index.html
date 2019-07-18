@@ -12,6 +12,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <style>
     .container {
@@ -26,9 +27,6 @@
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
-
-
-
 
 /*
  * Extra utilities
@@ -111,40 +109,88 @@
   <!-- SECTION 1 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
     <div class="col-md-4 d-flex overflow-hidden align-items-center justify-content-center">
-      <div class="position-fixed">
-      <h1 class="display-5" style="z-index: 999; font-style: italic">21OO</h1>
-<!--       <a href="">mechanics</a><br/>
-      <a href="">motivation</a><br/>
-      <a href="">prior art</a><br/>
-      <a href="">centralization</a><br/>
-      <a href="">creating</a> -->
+      <div class="position-fixed" style="z-index: 999;">
+        <h1 class="display-5" style="font-style: italic">21OO</h1>
+        <div style="text-align: right;"
+        >
+        <h5
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >a primer:</h5>
+        <a 
+        href="#mechanics"
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Mechanics</a><br/>
+        <a 
+        href=""
+        data-aos="fade-in"
+        data-aos-delay="75"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Motivation</a><br/>
+        <a 
+        href=""
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Prior art</a><br/>
+        <a 
+        href=""
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Centralization</a><br/>
+        <a 
+        href=""
+        data-aos="fade-in"
+        data-aos-offset="100"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-anchor-placement="top-center"
+        >Creating</a>
       </div>
-    </div>
-    <div class="col-md-7 overflow-hidden">
-      <div class="">
-          <img src="img/eth-rainbow.png" style="width: 75px;"/>
 
-        <p class="big">In <em>21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
-        <hr/>
-      </div>
     </div>
   </div>
+  <div class="col-md-7 overflow-hidden">
+    <div class="">
+      <img src="img/eth-rainbow.png" style="width: 75px;"/>
 
-
-  <!-- SECTION 2 -->
-  <div class="d-md-flex flex-md-equal w-100 align-middle">
-    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <p class="big">In <em>21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
+      <hr/>
     </div>
-    <div class="col-md-7 overflow-hidden">
-      <div class="">
-        <h3>Mechanics</h3>
-        <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
-        <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
-        <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
-<!--         <figure class="figure">
-          <img src="img/figure2.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+  </div>
+</div>
+
+
+<!-- SECTION 2 -->
+<div class="d-md-flex flex-md-equal w-100 align-middle">
+  <div class="col-md-4 d-flex align-items-center justify-content-center">
+  </div>
+  <div class="col-md-7 overflow-hidden">
+    <div class="">
+      <h3 id="mechanics">Mechanics</h3>
+      <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts create a supply of 21 million tokens: 10,000 non-fungible groups of 2100.</p>
+        <figure class="figure">
+          <img src="img/figure1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">@andrewyang is automatically entitled to 100 $andrewyang, this is known as an 'owners reward'</figcaption>
-        </figure> -->
+        </figure>
+      <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
+      <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
+
       </div>
     </div>
   </div>
@@ -345,6 +391,14 @@
     </div>
   </footer>
 
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+
+
+});  </script>
 
     <!-- Bootstrap core JavaScript
       ================================================== -->

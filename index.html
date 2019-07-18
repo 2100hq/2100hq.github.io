@@ -339,9 +339,9 @@
 
         <p>With sybil resistant subscriptions, influencers can do a lot more for their followers:</p>
 
-        <blockquote>‘Hodl at least 1 $dollarshaveclub and get a free razor every month!’</blockquote>
-        <blockquote>'Get a backstage pass with 10 $snoopdog'</blockquote>
-        <blockquote>‘Burn 1 $kdtrey5 to mint a Kevin Durant NFT’</blockquote>
+        <blockquote>@dollarshaveclub: Hodl at least 1 $dollarshaveclub and get a free razor every month!</blockquote>
+        <blockquote>@SnoopDog: Get a backstage pass with 10 $snoopdog</blockquote>
+        <blockquote>@KDTrey5: Burn 1 $kdtrey5 to get a Kevin Durant collectible</blockquote>
       </div>
     </div>
   </div>
@@ -398,7 +398,7 @@
         <h3>Creating Tokens</h3>
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
         <p>To be added to 2100, an account owner must publish a Tweet that says "Add me to @2100hq".</p>
-        <blockquote>@Snoopdog: Add me to @2100hq</blockquote>
+        <blockquote>@SnoopDog: Add me to @2100hq</blockquote>
         <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that "snoopdogg" is an existing Twitter username and use its private keys to sign an authorization message.</p>
         <p>Anyone can then broadcast this authorization message to the Ethereum blockchain to create the account token contract.</p>
         <p>When the token contract is created, 0.021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
@@ -418,7 +418,7 @@
         <p>When a user locks DAI, <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> detects this event and credits the user with the equivalent staking allocation in a database owned by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>. When a user unlocks DAI, <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> removes the staking allocation in its database.</p>
         <p>Users can log in to the 2100 app (using Metamask or another Ethereum client) to see their staking allocation and choose how much of their allocation they want to stake on particular user name accounts.</p>
         <p>For every Ethereum block detected by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>, 0.00021 tokens are generated in a <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> database for each username account. 90% of these tokens are divided pro-rata to users who have staked on these accounts. 10% of these tokens (to a maximum of 100 tokens) are reserved for the Twitter account owner as an ‘owners reward’ (see “Owners Reward”).</p>
-        <p>For example, Alice has chosen to stake 1 DAI on $SnoopDogg and Bob has staked 2 DAI. For each block, Alice will be credited (1/3*0.00021*90%) 0.000063 $SnoopDogg, Bob will be credited (2/3*0.00021*90%) 0.000126 $SnoopDogg, and @SnoopDogg will be credited (0.00021*10%) 0.000021 $SnoopDogg.</p>
+        <p>For example, Alice has chosen to stake 1 DAI on $snoopdogg and Bob has staked 2 DAI. For each block, Alice will be credited (1/3*0.00021*90%) 0.000063 $snoopdogg, Bob will be credited (2/3*0.00021*90%) 0.000126 $snoopdogg, and @SnoopDogg will be credited (0.00021*10%) 0.000021 $snoopdogg.</p>
       </div>
     </div>
   </div>
@@ -432,7 +432,7 @@
         <h3>Settling on-chain</h3>
         <p>At any time a user can choose to take their off-chain tokens and mint them on-chain as ERC-20 tokens. Once on-chain these assets are fully interoperable with the Ethereum network.</p>
         <p>A user clicks a button in the 2100 app and the app signs an authorization message for the 2100 smart contract to mint the tokens they are owed. When the user broadcasts this authorization message on-chain, the 2100 smart contract mints the tokens.</p>
-        <p>Following the example above, Alice wants to redeem 0.000063 $SnoopDogg from the centralized app to the Ethereum blockchain. She clicks “Redeem” in the app and she receives an authorization message. She broadcasts this message to the Ethereum network, sending it to the 2100 smart contract, which instructs the “snoopdogg” token contract to credit her balance with 0.000063.</p>
+        <p>Following the example above, Alice wants to redeem 0.000063 $snoopdogg from the centralized app to the Ethereum blockchain. She clicks “Redeem” in the app and she receives an authorization message. She broadcasts this message to the Ethereum network, sending it to the 2100 smart contract, which instructs the “snoopdogg” token contract to credit her balance with 0.000063.</p>
         <p>The 2100 smart contract enforces that the authorization message cannot be used more than once and that the message is signed by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>. When a token is minted on-chain it is now fully in possession of the user and can be used however she wants.</p>
       </div>
     </div>
@@ -446,7 +446,7 @@
         <h3>Owners Reward</h3>
         <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username to a maximum of 100 tokens. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
         <p>Owners of a username on the Twitter platform can change the issuance address and claim any existing tokens to their own Ethereum address by tweeting out a message specifying their Ethereum address.</p>
-        <blockquote>"Claiming my @2100hq tokens "0xabcd3f8"</blockquote>
+        <blockquote>Claiming my @2100hq tokens 0xabcdef123cd516ecc3849daf6845e3ec868087b755</blockquote>
         <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will monitor Twitter for this tweet and sign an authorization message that claims any current and ongoing owner’s reward tokens to a specific address. This tweet mechanism ensures that only the owner of a Twitter account can claim their owner’s reward.</p>
         <p>When this message is broadcast on-chain, the 2100 smart contract will verify its authenticity and store the owner’s address. The 2100 centralized app will detect this change and credit the owner’s Ethereum address with any outstanding tokens, and will issue new tokens to this address.</p>
         <p>An owner can then mint their tokens on-chain like any other user of the application.</p>
@@ -464,7 +464,7 @@
         <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in Tweets, but does not change other data such as followers, likes, etc.</p>
         <p>To reinforce the social consensus that 2100 tokens represent Twitter usernames, a 2100 username token must also be able to alter its symbol to match a Twitter username change.</p>
         <p>When a Twitter account is renamed, anyone in the world can send a tweet specifying which username changed:</p>
-        <blockquote>"The username @andrewyangvfa changed to @AndrewYang @2100hq"</blockquote>
+        <blockquote>The username @andrewyangvfa changed to @AndrewYang @2100hq</blockquote>
         <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that this happened and sign a message authorizing a name change on the $andrewyangvfa token contract.</p>
         <p>Anyone can broadcast this message on-chain to change the token’s name and symbol. If an existing 2100 token contract exists with the new symbol (andrewyang), it will be changed to the old symbol (andrewyangvfa).</p>
         <p>The address of the 2100 token contract does not change at the end of this process and thereby closely mirrors the Twitter platforms username change feature.</p>
@@ -480,7 +480,7 @@
       <div class="">
         <h3>Owner Opt-Out</h3>
         <p>Should the owner of a Twitter username no longer want their username to be used in the 2100 app they can tweet a message:</p>
-        <blockquote>"Remove my username from @2100hq"</blockquote>
+        <blockquote>Remove my username from @2100hq</blockquote>
         <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that this tweet was sent by the account that wants to opt-out.</p>
         <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will broadcast a message that scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to:</p>
         <blockquote>6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782</blockquote>

@@ -262,6 +262,15 @@
           data-aos-easing="ease-in-out"
           data-aos-anchor-placement="top-center"
           >Opting Out</a>
+          <a 
+          href="#next-steps"
+          class="navlink eg5"
+          data-aos="fade-in"
+          data-aos-offset="100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-anchor-placement="top-center"
+          >Next Steps</a>
         </div>
 
       </div>
@@ -288,7 +297,7 @@
         </figure>
         <p>The owner of a username on Twitter is entitled to ~5% of their token's supply (100 tokens). A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
         <p>To mint 2100 tokens, participants 'stake' the DAI stablecoin on the Twitter username of their choice.  Forgoing interest on their staked DAI entitles them to a proportional amount of the username tokens as they are minted.</p>
-
+        <p>Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.  Assuming continuous staking and 15s Ethereum blocks, 2100 tokens will be emitted in approximately 4.75 years.</p>
       </div>
     </div>
   </div>
@@ -328,13 +337,12 @@
         <p>Created in November 2015 by @blader, Stolen! was a fast paced mobile game that quickly gained popularity. The goal of the game was to steal Twitter accounts from other users using in-game currency S-bucks which were earned by holding popular accounts.</p>
         <a href="">https://en.wikipedia.org/wiki/Stolen!</a>
         <h4>Augur Twitter Markets</h4>
-        <p><a href="https://twitter.com/AugurProject">@AugurProject</a> is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities become popular trading venues.</p>
+        <p><a href="https://twitter.com/AugurProject">@AugurProject</a> is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities became popular trading venues.</p>
         <figure class="figure">
           <img src="img/figure3.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
           <figcaption class="figure-caption">A @veil market for betting on Andrew Yang's Twitter followers</figcaption>
         </figure>
-        <a href="">https://en.wikipedia.org/wiki/Augur_(software)</a>
-        <h3>Platform independence</h3>
+        <a href="">https://en.wikipedia.org/wiki/Augur_(software)</a><br/><br/>
         <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no utility outside of a single app.</p>
         <p><a href="https://twitter.com/AugurProject">@AugurProject</a> Twitter markets have given us the closest approximation of a platform-independent commodity, but these markets exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be Sybil attacked and is not always correlated with an increase in popularity or utility.</p>
         <p>2100 proposes a mechanism to create long-lived, platform independent, identity-linked commodities. With the right implementation, we hope that 2100 will inspire a 'Layer 2' of utility.</p>
@@ -350,7 +358,9 @@
         <h3>Philosophy</h3>
         <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
 
-        <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain (open source, auditable DB) by Citizen Hex Inc. (the company behind 2100, hereby referred to as <a href="https://twitter.com/2100hq">@2100hq</a>), with plans to move 'on-chain' (Ethereum Plasma etc.) if our 'MVP' is a success.</p>
+        <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain (open source, auditable DB) by Citizen Hex Inc. (the company behind 2100, hereby referred to as <a href="https://twitter.com/2100hq">@2100hq</a>), with plans to move 'on-chain' if the 'MVP' is a success.</p>
+
+        <p>In the decentralized version of the app, staking could take place on a sidechain, and a decentralized oracle will be used to relay the state of Twitter.</p>
       </div>
     </div>
   </div>
@@ -364,9 +374,9 @@
         <p>2100 token contracts are created when <a href="https://twitter.com/2100hq">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
         <p>Anyone in the world can send a tweet specifying which Twitter username should be added to 2100:</p>
         <blockquote>"Add @SnoopDogg to #2100</blockquote>
-        <p><a href="https://twitter.com/2100hq">@2100hq</a> will verify that “snoopdogg” is an existing Twitter username, that a token with the name “snoopdogg” has not yet been created, and that “snoopdogg” isn’t on the username blacklist (See “Owner Opt-Out and Blacklist”). <a href="https://twitter.com/2100hq">@2100hq</a> will use its private keys to sign an authorization message.</p>
+        <p><a href="https://twitter.com/2100hq">@2100hq</a> will verify that “snoopdogg” is an existing Twitter username, that a token with the name “snoopdogg” has not yet been created, and that “snoopdogg” isn’t on the opt-out list (See “Owner Opt-Out”). <a href="https://twitter.com/2100hq">@2100hq</a> will use its private keys to sign an authorization message.</p>
         <p>Anyone can then broadcast this authorization message to the Ethereum blockchain to create the account token contract.</p>
-        <p>When the token contract is created, 0.0021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
+        <p>When the token contract is created, 0.021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
       </div>
     </div>
   </div>
@@ -378,11 +388,11 @@
     <div class="col-md-7 overflow-hidden">
       <div class="">
         <h3>Minting off-chain</h3>
-        <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a> and tokens are not minted on-chain until a user requests settlement. Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.</p>
-        <p>Users deposit DAI (a token pegged in value to the US Dollar) into a non-custodial Ethereum contract. <a href="https://twitter.com/2100hq">@2100hq</a> never has possession of these funds and users can deposit or withdraw DAI at any time.</p>
-        <p>When a user deposits DAI, <a href="https://twitter.com/2100hq">@2100hq</a> detects this amount and credits the user with the equivalent staking allocation in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a>. When a user withdraws DAI, <a href="https://twitter.com/2100hq">@2100hq</a> removes the staking allocation in its database.</p>
+        <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a> and tokens are not minted on-chain until a user requests settlement.</p>
+        <p>Users deposit DAI (a token pegged in value to the US Dollar) into a non-custodial Ethereum contract. <a href="https://twitter.com/2100hq">@2100hq</a> never has possession of these funds and users can lock or unlock DAI at any time.</p>
+        <p>When a user locks DAI, <a href="https://twitter.com/2100hq">@2100hq</a> detects this event and credits the user with the equivalent staking allocation in a database owned by <a href="https://twitter.com/2100hq">@2100hq</a>. When a user unlocks DAI, <a href="https://twitter.com/2100hq">@2100hq</a> removes the staking allocation in its database.</p>
         <p>Users can log on to the 2100 app to see their staking allocation. They then choose how much of their allocation they want to stake on particular user name accounts.</p>
-        <p>For every Ethereum block detected by <a href="https://twitter.com/2100hq">@2100hq</a>, 0.00021 tokens are generated in a <a href="https://twitter.com/2100hq">@2100hq</a> database for each username account. 90% of these tokens are divided pro-rata to users who have staked on these accounts. 10% of these tokens are reserved for the Twitter account owner as an ‘owners reward’ (see “Owners Reward”).</p>
+        <p>For every Ethereum block detected by <a href="https://twitter.com/2100hq">@2100hq</a>, 0.00021 tokens are generated in a <a href="https://twitter.com/2100hq">@2100hq</a> database for each username account. 90% of these tokens are divided pro-rata to users who have staked on these accounts. 10% of these tokens (to a maximum of 100 tokens) are reserved for the Twitter account owner as an ‘owners reward’ (see “Owners Reward”).</p>
         <p>For example, Alice has chosen to stake 1 DAI on $SnoopDogg and Bob has staked 2 DAI. For each block, Alice will be credited (1/3*0.00021*90%) 0.000063 $SnoopDogg, Bob will be credited (2/3*0.00021*90%) 0.000126 $SnoopDogg, and @SnoopDogg will be credited (0.00021*10%) 0.000021 $SnoopDogg.</p>
       </div>
     </div>
@@ -411,7 +421,7 @@
         <h3>Owners Reward</h3>
         <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username to a maximum of 100 tokens. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
         <p>Owners of a username on the Twitter platform can change the issuance address and claim any existing tokens to their own Ethereum address by tweeting out a message specifying their Ethereum address.</p>
-        <quote>"Claiming my @2100hq tokens "0xabcd3f8"</quote>
+        <blockquote>"Claiming my @2100hq tokens "0xabcd3f8"</blockquote>
         <p><a href="https://twitter.com/2100hq">@2100hq</a> will monitor Twitter for this tweet and sign an authorization message that claims any current and ongoing owner’s reward tokens to a specific address. This tweet mechanism ensures that only the owner of a Twitter account can claim their owner’s reward.</p>
         <p>When this message is broadcast on-chain, the 2100 smart contract will verify its authenticity and store the owner’s address. The 2100 centralized app will detect this change and credit the owner’s Ethereum address with any outstanding tokens, and will issue new tokens to this address.</p>
         <p>An owner can then mint their tokens on-chain like any other user of the application.</p>
@@ -429,7 +439,7 @@
         <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in Tweets, but does not change other data such as followers, likes, etc.</p>
         <p>To reinforce the social consensus that 2100 tokens represent Twitter usernames, a 2100 username token must also be able to alter its symbol to match a Twitter username change.</p>
         <p>When a Twitter account is renamed, anyone in the world can send a tweet specifying which username changed:</p>
-        <quote>"The username @andrewyangvfa changed to @AndrewYang @2100hq"</quote>
+        <blockquote>"The username @andrewyangvfa changed to @AndrewYang @2100hq"</blockquote>
         <p><a href="https://twitter.com/2100hq">@2100hq</a> will verify that this happened and sign a message authorizing a name change on the $andrewyangvfa token contract.</p>
         <p>Anyone can broadcast this message on-chain to change the token’s name and symbol. If an existing 2100 token contract exists with the new symbol (andrewyang), it will be changed to the old symbol (andrewyangvfa).</p>
         <p>The address of the 2100 token contract does not change at the end of this process and thereby closely mirrors the Twitter platforms username change feature.</p>
@@ -443,60 +453,45 @@
     <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <h3>Owner Opt-Out and Blacklist</h3>
+        <h3>Owner Opt-Out</h3>
         <p>Should the owner of a Twitter username not want their username to be used in the 2100 app they can tweet a message:</p>
-        <quote>Remove my username from @2100hq</quote>
-        <p>Citizen Hex will verify that this tweet was sent by the account that wants to opt-out.</p>
-        <p>If there is no account token with that username, Citizen Hex will broadcast a message on-chain that will add this username to a blacklist. The token contract for this name will never be able to be created once a name is on the blacklist.</p>
-        <p>If there is a token contract that has its symbol set to the same string as the user’s account, Citizen Hex will broadcast a message that both adds the name to the blacklist and also scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to “6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782”</p>
+        <blockquote>"Remove my username from @2100hq"</blockquote>
+        <p>@2100hq will verify that this tweet was sent by the account that wants to opt-out.</p>
+        <p>If there is no account token with that username, @2100hq will broadcast a message on-chain that will add this username to an opt-out list. The token contract for this name will never be able to be created once a name is on the opt-out list.</p>
+        <p>If there is a token contract that has its symbol set to the same string as the user’s account, Citizen Hex will broadcast a message that both adds the name to the opt-out list and also scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to “6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782”</p>
         <p>The 2100 centralized app will detect this change and immediately halt staking on this account. Users who have generated tokens on this account can still mint them on-chain, but no further tokens will be generated off-chain or minted.</p>
       </div>
     </div>
   </div>
 
-  <footer class="container py-5">
+
+    <!-- SECTION 12  -->
+  <div id="next-steps" class="d-md-flex flex-md-equal w-100 align-middle">
+    <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+    <div class="col-md-7 overflow-hidden">
+      <div class="">
+        <h3>Next Steps</h3>
+        <p>At @2100hq, we're currently prototyping 2100 with plans for a private testnet in August 2019 and a public testnet coinciding with @EFDevcon.  If you'd like to get involved, you can follow @2100hq or say 'hi' on Discord.  Thanks for reading!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
     <div class="row">
-      <div class="col-12 col-md">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-        <small class="d-block mb-3 text-muted">© 2017-2018</small>
+      <div class="col-md-4">
+                          <img src="img/eth-rainbow.png" style="width: 75px;"/>
+
       </div>
-      <div class="col-6 col-md">
-        <h5>Features</h5>
+      <div class="col-md-7 col-md">
+        <hr/>
+        <h5>2100</h5>
+
         <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Cool stuff</a></li>
-          <li><a class="text-muted" href="#">Random feature</a></li>
-          <li><a class="text-muted" href="#">Team feature</a></li>
-          <li><a class="text-muted" href="#">Stuff for developers</a></li>
-          <li><a class="text-muted" href="#">Another one</a></li>
-          <li><a class="text-muted" href="#">Last time</a></li>
+          <li><a class="text-muted" href="#">Twitter</a></li>
+          <li><a class="text-muted" href="#">Discord</a></li>
         </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Resource</a></li>
-          <li><a class="text-muted" href="#">Resource name</a></li>
-          <li><a class="text-muted" href="#">Another resource</a></li>
-          <li><a class="text-muted" href="#">Final resource</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>Resources</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Business</a></li>
-          <li><a class="text-muted" href="#">Education</a></li>
-          <li><a class="text-muted" href="#">Government</a></li>
-          <li><a class="text-muted" href="#">Gaming</a></li>
-        </ul>
-      </div>
-      <div class="col-6 col-md">
-        <h5>About</h5>
-        <ul class="list-unstyled text-small">
-          <li><a class="text-muted" href="#">Team</a></li>
-          <li><a class="text-muted" href="#">Locations</a></li>
-          <li><a class="text-muted" href="#">Privacy</a></li>
-          <li><a class="text-muted" href="#">Terms</a></li>
-        </ul>
+          <small class="d-block mb-3 text-muted">© 2019 Citizen Hex Inc.</small>
+
       </div>
     </div>
   </footer>

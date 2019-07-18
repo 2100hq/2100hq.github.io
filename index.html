@@ -160,16 +160,38 @@
     .navlink.active{
       font-weight: 600;
     }
+
+    .md-and-up{
+      display: none;
+    }
+
+    .md-and-up-bold{
+      font-weight: bold;
+    }
+
+
+    @media (min-width: 768px) {
+      .md-and-up{
+        display: block;
+      }
+
+    .md-and-up-bold{
+      font-weight: 500;
+    }
+
+    }
+
+
   </style>
 </head>
 <body class="p-5">
-<img src="img/eth-rainbow.png" style="position: absolute; width: 75px;"/>
+<img class="md-and-up" src="img/eth-rainbow.png" style="position: absolute; width: 75px;"/>
   <!-- SECTION 1 -->
   <div class="d-md-flex flex-md-equal w-100 align-middle">
     <div class="col-md-4 d-flex overflow-hidden align-items-center justify-content-center">
-      <div class="position-fixed" style="z-index: 999;">
-        <h1 class="display-5" style="font-style: italic">21OO</h1>
-        <div id="menu-center" style="text-align: right;">
+      <div class="position-fixed hidden-sm-down" style="z-index: 999;">
+        <h1 class="md-and-up display-5" style="font-style: italic">21OO</h1>
+        <div class="md-and-up" style="text-align: right;">
           <a 
           href="#overview"
           class="navlink eg1"
@@ -275,7 +297,7 @@
     </div>
     <div class="col-md-7 overflow-hidden">
       <div class="">
-        <p class="big">In <em>21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
+        <p class="big">In <em class="md-and-up-bold">21OO</em>, participants use virtual mining to mint tokens that are linked to Twitter usernames.  This process creates a unique currency per Twitter account.</p>
         <hr/>
       </div>
     </div>

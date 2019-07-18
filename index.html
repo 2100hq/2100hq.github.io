@@ -284,7 +284,7 @@
         <div class="col-md-7 overflow-hidden">
           <div class="">
             <p class="big">In <em class="md-and-up-bold">21OO</em>, participants lock DAI to mint tokens that are linked to Twitter usernames.  This process creates a unique token per Twitter account.</p>
-            <hr class="fade-trigger"/>
+            <hr/>
           </div>
         </div>
       </div>
@@ -294,9 +294,9 @@
         </div>
         <div class="col-md-7 overflow-hidden">
           <div class="">
-            <h3 id="overview">Overview</h3>
+            <h3 id="overview" class="">Overview</h3>
             <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts would create a supply of 21 million tokens: 10,000 non-fungible groups of 2,100.</p>
-            <figure class="figure">
+            <figure class="figure fade-trigger ">
               <img src="img/figure1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
               <figcaption class="figure-caption">@andrewyang + DAI lockdrop = $andrewyang</figcaption>
             </figure>
@@ -503,7 +503,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script> AOS.init({});</script>
+  <script> AOS.init({
+      anchorPlacement: 'bottom-bottom'
+  });
+  </script>
 
 </body>
 </html>

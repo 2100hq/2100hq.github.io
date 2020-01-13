@@ -1,0 +1,541 @@
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144189257-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144189257-1');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Citizen Hex Inc.">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title>2100</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  <style>
+
+  /*
+
+    eg1: #4aa6a7;
+    eg2: #5173ac;
+    eg3: #8151a9;
+
+    eg4: #b75378;
+    eg5: #ed6558;
+    eg6: #ed6558;
+
+    eg7: #bb8450;
+    eg8: #9ab153;
+    eg9: #68b07c;
+
+    */
+
+    a.eg1,a:hover.eg1,a:visited.eg1{
+      color: #4aa6a7;
+    }
+
+    a.eg2,a:hover.eg2,a:visited.eg2{
+      color: #5173ac;
+    }
+
+    a.eg3,a:hover.eg3,a:visited.eg3{
+      color: #8151a9;
+    }
+
+    a.eg4,a:hover.eg4,a:visited.eg4{
+      color: #b75378;
+    }
+
+    a.eg5,a:hover.eg5,a:visited.eg5{
+      color: #ed6558;
+    }
+
+    a.eg6,a:hover.eg6,a:visited.eg6{
+      color: #ed6558;
+    }
+
+    a.eg7,a:hover.eg7,a:visited.eg6{
+      color: #bb8450;
+    }
+
+    a.eg8,a:hover.eg8,a:visited.eg6{
+      color: #9ab153;
+    }
+
+    a.eg9,a:hover.eg9,a:visited.eg6{
+      color: #68b07c;
+    }
+
+    .alert-primary{
+      background-color: #ed6558;
+      color: black;
+    }
+
+    .alert-primary a{
+      color:#eee;
+      font-size: 1rem;
+      text-decoration: underline;
+    }
+
+    body{
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    p{
+      margin-bottom: 2rem;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    p,a {
+      font-size: 1.3rem;
+      font-weight: 400;
+    }
+
+    h1{
+      font-size: 5.2rem;
+      font-weight: 600;
+
+    }
+
+    h3{
+      font-size: 2.2rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h3.mylead{
+      margin-top: 1rem;
+    }
+    h4{
+      font-size: 1.5rem;
+      margin-top: 2.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p.big{
+      font-size: 2.7rem;
+      line-height: 4rem;
+      font-weight: 500;
+    }
+
+    figure{
+      margin-bottom: 3rem;
+    }
+
+    blockquote{
+      font-size: 1.2rem;
+      background-color: rgba(29, 161, 242,0.1);
+      padding: 1rem;
+    }
+
+    .figure-caption{
+      font-size: 1.2rem;
+    }
+
+    .navlink{
+      display: block;
+      font-size: 1.2rem;
+    }
+
+    .navlink.active{
+      font-weight: 600;
+    }
+
+    .fixed-md-and-up{
+      position: static;
+    }
+
+    .visible-md-and-up{
+      display: none;
+    }
+
+
+    @media (min-width: 768px) {
+      .fixed-md-and-up{
+        position: fixed;
+      }
+
+      .visible-md-and-up{
+        display: block;
+      }
+
+      .center-md-and-up{
+        justify-content: center!important;
+      }
+
+
+      body{
+        padding: 5rem;
+      }
+
+      .alert.alert-primary {
+        margin-top: -5rem;
+        margin-bottom: 5rem;
+      }
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="alert alert-primary" role="alert">
+    This alpha primer has been deprecated. See the <a href="index.html">updated beta</a> primer.
+  </div>
+  <div class="container">
+    <div class="row">
+      <img class="visible-md-and-up" src="img/eth-rainbow.png" style="position: fixed; bottom: 2rem; width: 60px;"/>
+      <!-- SECTION 1 -->
+      <div class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex overflow-hidden center-md-and-up">
+          <div class="fixed-md-and-up" style="z-index: 999;">
+            <h1 class="" style="font-style: italic">21OO</h1>
+            <div class="visible-md-and-up" style="text-align: right;">
+              <a
+              href="#introduction"
+              class="navlink eg1"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Introduction</a>
+              <a
+              href="#motivation"
+              class="navlink eg1"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Motivation</a>
+              <a
+              href="#context"
+              class="navlink eg2"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="300"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Context</a>
+              <a
+              href="#philosophy"
+              class="navlink eg2"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Philosophy</a>
+              <a
+              href="#creating-tokens"
+              class="navlink eg3"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Creating Tokens</a>
+              <a
+              href="#minting-off-chain"
+              class="navlink eg3"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Minting off-chain</a>
+              <a
+              href="#settling-on-chain"
+              class="navlink eg4"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="700"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Settling on-chain</a>
+              <a
+              href="#owners-reward"
+              class="navlink eg4"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="800"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Owners Reward</a>
+              <a
+              href="#name-changes"
+              class="navlink eg5"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Name Changes</a>
+              <a
+              href="#opting-out"
+              class="navlink eg5"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Opting Out</a>
+              <a
+              href="#next-steps"
+              class="navlink eg5"
+              data-aos="fade-in"
+              data-aos-anchor=".fade-trigger"
+              data-aos-delay="1100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-anchor-placement="top-center"
+              >Next Steps</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3 id="introduction" class="mylead">Introduction</h3>
+            <p>In 2100, participants lock DAI to mint tokens that are linked to Twitter usernames. This process creates a unique token per Twitter account.</p>
+            <p>Each account is represented as an ERC-20 token and has a fixed supply of 2,100.  Collectively, the top 10,000 Twitter accounts would create a supply of 21 million tokens: 10,000 non-fungible groups of 2,100.</p>
+            <figure class="figure fade-trigger ">
+              <img src="img/figure1.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">@andrewyang + DAI lockdrop = $andrewyang</figcaption>
+            </figure>
+            <p>The owner of a username on Twitter is entitled to 100 of their own tokens. A public marketplace of 'minters' compete to mint and own the remaining 2000 tokens.</p>
+            <p>To mint 2100 tokens, participants 'stake' the <a href="https://www.coinbase.com/earn/dai/lesson/1" class="eg3">DAI stablecoin</a> on the Twitter username of their choice.</p>
+            <p>Every block will generate 0.00021 username tokens per staked account until the maximum supply of 2,100 is reached.  Assuming continuous staking and 15s Ethereum blocks, 2,100 tokens will be emitted in approximately 4.75 years.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3 -->
+      <div id="motivation" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class=" ">
+            <h3>Motivation</h3>
+            <p>We believe that 2100 tokens have multiple forms of utility and create natural incentives for both minters and account owners.  For example, 2100 tokens can facilitate a weighted (and sybil resistant) social graph.</p>
+
+            <p>When there is no cost associated with subscribing to a feed on public networks like Twitter, users can subscribe to an arbitrarily large number of accounts.  This creates a problem for influencers and popular accounts because they can’t prioritize or distinguish die-hard fans from casual fans or bots.</p>
+
+            <p>With sybil resistant subscriptions, influencers can do a lot more for their followers:</p>
+
+            <blockquote>@dollarshaveclub: Hodl at least 1 $dollarshaveclub and get a free razor every month!</blockquote>
+            <blockquote>@SnoopDog: Get a backstage pass with 10 $snoopdog</blockquote>
+            <blockquote>@KDTrey5: Burn 1 $kdtrey5 to get a Kevin Durant collectible</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 4 -->
+      <div id="context" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Context</h3>
+            <p>In a <a href="https://youtu.be/_mP9OmOFxc4" class="eg3">May 2019 interview</a> with <a href="https://twitter.com/joerogan" class="eg2">@joerogan</a>, <a href="https://twitter.com/jack" class="eg2">@jack</a> recounted that Twitter was not invented but ‘discovered’.  With this statement, he was referring to the post-internet inevitability of a Twitter-like protocol.</p>
+            <p>We theorize that socially-linked commodities are (yet another) natural outcome of the democratization of financial engineering, and that 2100 or a similar protocol is also awaiting 'discovery'.</p>
+            <p>As evidence of this, we cite three previous (though incomplete) implementations of this idea:</p>
+            <h4>The Hollywood Stock Exchange (HSX)</h4>
+            <p>Created in 1999 by <a href="https://twitter.com/maxkeiser" class="eg2">@maxkeiser</a> and Michael R. Burns, the Hollywood Stock Exchange, or HSX, is a web-based, multiplayer game in which players use simulated money to buy and sell simulated shares of actors, directors, upcoming films, and film-related options.</p>
+            <a href="https://en.wikipedia.org/wiki/Hollywood_Stock_Exchange" class="eg3">https://en.wikipedia.org/wiki/Hollywood_Stock_Exchange</a>
+            <h4>Stolen!</h4>
+            <p>Created in November 2015 by @blader, Stolen! was a fast paced mobile game that quickly gained popularity. The goal of the game was to steal Twitter accounts from other users using in-game currency S-bucks which were earned by holding popular accounts.</p>
+            <a href="https://en.wikipedia.org/wiki/Stolen!" class="eg3">https://en.wikipedia.org/wiki/Stolen!</a>
+            <h4>Augur Twitter Markets</h4>
+            <p><a href="https://twitter.com/AugurProject" class="eg2">@AugurProject</a> is a decentralized prediction market platform built on the Ethereum blockchain that was founded in 2014. In 2019, prediction markets betting on the follower count of Twitter celebrities became popular trading venues.</p>
+            <figure class="figure">
+              <img src="img/figure3.png" class="figure-img img-fluid rounded" style="max-width: 600px;" alt="A generic square placeholder image with rounded corners in a figure.">
+              <figcaption class="figure-caption">A @veil market for betting on Andrew Yang's Twitter followers</figcaption>
+            </figure>
+            <a href="https://en.wikipedia.org/wiki/Augur_(software)" class="eg3">https://en.wikipedia.org/wiki/Augur_(software)</a><br/><br/>
+            <p>Both Stolen and HSX achieved finite success, but suffered from the problem that their commodity had no utility outside of a single app.</p>
+            <p><a href="https://twitter.com/AugurProject" class="eg2">@AugurProject</a> Twitter markets have given us the closest approximation of a platform-independent commodity, but these markets exist only for a specific window of time and for a specific range of Twitter followers.  Further, follower count can be Sybil attacked and is not always correlated with an increase in popularity or utility.</p>
+            <p>2100 proposes a mechanism to create long-lived, platform independent, identity-linked commodities. With the right implementation, we hope that 2100 will inspire a 'Layer 2' of utility.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 5  -->
+      <div id="philosophy" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Philosophy</h3>
+            <p>While our long term goal is to completely decentralize the 2100 protocol, we believe that the current costs of decentralization (both in terms of 'gas' and more critically user experience) are barriers to widespread adoption. For this reason, the first version of 2100 will be a centralized application with a deep Ethereum integration.</p>
+
+            <p>Ethereum will be used for non-custodial DAI deposits and for 'settling' the Twitter-linked assets as ERC-20 tokens.  All other functionality will be transparently orchestrated off-chain (open source, auditable DB) by Citizen Hex Inc. (the company behind 2100, hereby referred to as <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>), with plans to move 'on-chain' if the 'MVP' is a success.</p>
+
+            <p>In the decentralized version of the app, staking could take place on a sidechain, and a decentralized oracle will be used to relay the state of Twitter.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 6  -->
+      <div id="creating-tokens" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Creating Tokens</h3>
+            <p>2100 token contracts are created when <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> approves that a string of lowercase characters is an existing Twitter username.</p>
+            <p>To be added to 2100, an account owner must publish a Tweet that says "Add me to @2100hq".</p>
+            <blockquote>@SnoopDog: Add me to @2100hq</blockquote>
+            <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that "snoopdogg" is an existing Twitter username and use its private keys to sign an authorization message.</p>
+            <p>Anyone can then broadcast this authorization message to the Ethereum blockchain to create the account token contract.</p>
+            <p>When the token contract is created, 0.021 tokens will be minted to the user who submitted the transaction as a reward for creating the contract.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECTION 7  -->
+      <div id="minting-off-chain" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Minting off-chain</h3>
+            <p>After creation, tokens on 2100 username contracts are generated each Ethereum block by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>. This generation of tokens takes place in a database owned by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> and tokens are not minted on-chain until a user requests settlement.</p>
+            <p>Users lock DAI (a token pegged in value to the US Dollar) in a non-custodial Ethereum smart-contract. <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> never has possession of these funds and users can unlock their DAI at any time.</p>
+            <p>When a user locks DAI, <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> detects this event and credits the user with the equivalent staking allocation in a database owned by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>. When a user unlocks DAI, <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> removes the staking allocation in its database.</p>
+            <p>Users can log in to the 2100 app (using Metamask or another Ethereum client) to see their staking allocation and choose how much of their allocation they want to stake on particular user name accounts.</p>
+            <p>For every Ethereum block detected by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>, 0.00021 tokens are generated in a <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> database for each username account. 90% of these tokens are divided pro-rata to users who have staked on these accounts. 10% of these tokens (to a maximum of 100 tokens) are reserved for the Twitter account owner as an ‘owners reward’ (see “Owners Reward”).</p>
+            <p>For example, Alice has chosen to stake 1 DAI on $snoopdogg and Bob has staked 2 DAI. For each block, Alice will be credited (1/3*0.00021*90%) 0.000063 $snoopdogg, Bob will be credited (2/3*0.00021*90%) 0.000126 $snoopdogg, and @SnoopDogg will be credited (0.00021*10%) 0.000021 $snoopdogg.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECTION 8  -->
+      <div id="settling-on-chain" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Settling on-chain</h3>
+            <p>At any time a user can choose to take their off-chain tokens and mint them on-chain as ERC-20 tokens. Once on-chain these assets are fully interoperable with the Ethereum network.</p>
+            <p>A user clicks a button in the 2100 app and the app signs an authorization message for the 2100 smart contract to mint the tokens they are owed. When the user broadcasts this authorization message on-chain, the 2100 smart contract mints the tokens.</p>
+            <p>Following the example above, Alice wants to redeem 0.000063 $snoopdogg from the centralized app to the Ethereum blockchain. She clicks “Redeem” in the app and she receives an authorization message. She broadcasts this message to the Ethereum network, sending it to the 2100 smart contract, which instructs the “snoopdogg” token contract to credit her balance with 0.000063.</p>
+            <p>The 2100 smart contract enforces that the authorization message cannot be used more than once and that the message is signed by <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a>. When a token is minted on-chain it is now fully in possession of the user and can be used however she wants.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 9  -->
+      <div id="owners-reward" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Owners Reward</h3>
+            <p>Owners of a Twitter username will be credited 10% of the minted token issuance on the contract that shares their username to a maximum of 100 tokens. Until an owner's address is known, rewards will be issued to the zero address (0x0000000000000000000000000000000000000000).</p>
+            <p>Owners of a username on the Twitter platform can change the issuance address and claim any existing tokens to their own Ethereum address by tweeting out a message specifying their Ethereum address.</p>
+            <blockquote>Claiming my @2100hq tokens 0xabcdef123cd516ecc3849daf6845e3ec868087b755</blockquote>
+            <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will monitor Twitter for this tweet and sign an authorization message that claims any current and ongoing owner’s reward tokens to a specific address. This tweet mechanism ensures that only the owner of a Twitter account can claim their owner’s reward.</p>
+            <p>When this message is broadcast on-chain, the 2100 smart contract will verify its authenticity and store the owner’s address. The 2100 centralized app will detect this change and credit the owner’s Ethereum address with any outstanding tokens, and will issue new tokens to this address.</p>
+            <p>An owner can then mint their tokens on-chain like any other user of the application.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECTION 10  -->
+      <div id="name-changes" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Name changes</h3>
+            <p>Twitter allows username owners to change their username.  This changes the url of the account profile and how it is mentioned in Tweets, but does not change other data such as followers, likes, etc.</p>
+            <p>To reinforce the social consensus that 2100 tokens represent Twitter usernames, a 2100 username token must also be able to alter its symbol to match a Twitter username change.</p>
+            <p>When a Twitter account is renamed, anyone in the world can send a tweet specifying which username changed:</p>
+            <blockquote>The username @andrewyangvfa changed to @AndrewYang @2100hq</blockquote>
+            <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that this happened and sign a message authorizing a name change on the $andrewyangvfa token contract.</p>
+            <p>Anyone can broadcast this message on-chain to change the token’s name and symbol. If an existing 2100 token contract exists with the new symbol (andrewyang), it will be changed to the old symbol (andrewyangvfa).</p>
+            <p>The address of the 2100 token contract does not change at the end of this process and thereby closely mirrors the Twitter platforms username change feature.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECTION 11  -->
+      <div id="opting-out" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Owner Opt-Out</h3>
+            <p>Should the owner of a Twitter username no longer want their username to be used in the 2100 app they can tweet a message:</p>
+            <blockquote>Remove my username from @2100hq</blockquote>
+            <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will verify that this tweet was sent by the account that wants to opt-out.</p>
+            <p><a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> will broadcast a message that scrambles the symbol and name of the token contract by hashing the name with the current block number. For example, the token with the symbol “snoopdogg” will have its symbol changed to:</p>
+            <blockquote>6455ffc29962d86b8b08c96b3db27ca0958a1bf1768ccecfde467d3b2bb0b782</blockquote>
+            <p>The 2100 centralized app will detect this change and immediately halt staking on this account. Users who have generated tokens on this account can still mint them on-chain, but no further tokens will be generated off-chain or minted.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SECTION 12  -->
+      <div id="next-steps" class="d-md-flex flex-md-equal w-100 align-middle">
+        <div class="col-md-4 d-flex align-items-center justify-content-center"><h1 style="color: ghostwhite"></h1></div>
+        <div class="col-md-7 overflow-hidden">
+          <div class="">
+            <h3>Next Steps</h3>
+            <p>@2100hq is currently prototyping 2100 with plans for a private testnet in August 2019 and a public testnet coinciding with @EFDevcon.  If you'd like to get involved, you can follow <a href="https://twitter.com/2100hq" class="eg2">@2100hq</a> or say 'hi' on <a href="https://discord.gg/yBv9T6M" class="eg3">Discord</a>.  Thanks for reading!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+      </div>
+      <div class="col-md-7 col-md">
+        <hr/>
+        <h5>2100</h5>
+
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://twitter.com/2100hq">Twitter</a></li>
+          <li><a class="text-muted" href="https://discord.gg/Pym62Gf">Discord</a></li>
+          <li><a class="text-muted" href="https://github.com/2100hq">Github</a></li>
+        </ul>
+        <small class="d-block mb-3 text-muted">© 2019 Citizen Hex Inc.</small>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script> AOS.init({
+    anchorPlacement: 'bottom-bottom'
+  });
+</script>
+
+</body>
+</html>
